@@ -1,0 +1,272 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 180px 5fr;
+}
+
+.sidebar {
+    display: grid;
+    grid-row: 1 / 3;
+    background-color: #0ea5e9;
+    grid-template-rows: 100px 325px 300px auto;
+    padding: 20px;
+    color: white;
+    align-items: center;
+}
+
+.sidebar > .title {
+    display: grid;
+    grid-template-columns: 50px auto;
+    align-items: center;
+    gap: 10px;
+}
+
+li > img {
+    width: 30px;
+}
+
+.nav > ul > li,
+.links > ul > li {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav > ul,
+.links > ul {
+    margin-left: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.header {
+    display: grid;
+    grid-column: 2 / 3;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    align-items: center;
+}
+
+.header .search {
+    display: grid;
+    grid-template-columns: 50px 3fr 50px 50px auto;
+    align-items: center;
+    gap: 10px;
+}
+
+.search label {
+    display: grid;
+    justify-content: center;
+}
+
+.search img {
+    height: 30px;
+}
+
+#profile img {
+    height: 40px;
+}
+
+.search input {
+    background-color: #e2e8f0;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    height: 40px;
+    padding-left: 20px;
+}
+
+.search > p {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .actions {
+    display: grid;
+    grid-template-columns: 3fr 150px 150px 150px;
+    justify-items: center;
+    align-items: center;
+}
+
+.actions .greeting {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 20px 40px;
+    justify-self: left;
+    align-items: center;
+    
+}
+
+.greeting img {
+    width: 80px;
+    height: 80px;
+    grid-row: 1 / 3;
+}
+
+.greeting p {
+    font-size: 24px;
+}
+
+.greeting p:first-of-type {
+    font-size: 16px;
+}
+
+.actions button {
+    background-color: #0ea5e9;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    width: 120px;
+}
+
+.content {
+    display: grid;
+    grid-area: 2 / 2 / 3 / 3;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 30px 1fr 30px 1fr;
+    background-color: #e2e8f0;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+.content > p {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-row: 2 / 5;
+    gap: 30px;
+}
+
+.card,
+.announcements,
+.trending{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px lightgrey;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 10px auto;
+    height: 225px;
+}
+
+.card .stripe {
+    background-color: #f59e0b;
+    border-radius: 10px 0 0 10px;
+}
+
+.card-contents {
+    display: grid;
+    grid-template-rows: 1fr 3fr 40px;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-contents p:first-of-type {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.card-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40px;
+    justify-items: right;
+}
+
+.card-actions button {
+    height: 40px;
+    width: 40px;
+}
+
+.announcements {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(30px, 1fr));
+    padding: 20px;
+    align-items: center;
+}
+
+.announcement {
+    height: 100%;
+    border-bottom: solid 1px lightgrey;
+    display: grid;
+    align-items: center;
+}
+
+.announcement:last-of-type {
+    border-bottom: none;
+}
+
+.announcements p:first-child {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.announcements p:last-child {
+    font-size: 14px;
+}
+
+.trending {
+    padding: 10px 30px;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(30px, 1fr));
+    align-items: center;
+}
+
+.account {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.account img {
+    width: 50px;
+}
+
+.account div p:last-of-type {
+    color: #737373;
+}
