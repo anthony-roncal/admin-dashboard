@@ -1,3 +1,3 @@
-# odin-admin-dashboard
+# admin-dashboard
 
-This is a practice project for The Odin Project: Admin Dashboard.
+View app at: https://anthony-roncal.github.io/admin-dashboard/
